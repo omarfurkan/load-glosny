@@ -1,11 +1,13 @@
 import React from 'react';
 import './Home.css'
 import product from '../../images/glosny-product.jpg';
-import Reviews from '../Reviews/Reviews';
+import useReviews from '../../hooks/useReviews';
+import OnReviews from '../OnReviews/OnReviews';
 
 const Home = () => {
+    const [reviews, setReviews] = useReviews();
     return (
-        <di >
+        <div >
             <div className='home-container'>
                 <div className="product-info">
                     <h1>Make Some Noise</h1>
@@ -20,9 +22,17 @@ const Home = () => {
 
             <div className='customer-container'>
                 <h2>Customer Reviews</h2>
-                <Reviews></Reviews>
+                <div className='reviews-container'>
+                    {
+                        reviews.map(review => <OnReviews
+                            key={review.id}
+                            review={review}
+                        ></OnReviews>)
+                    }
+                </div>
+
             </div>
-        </di>
+        </div>
     );
 };
 

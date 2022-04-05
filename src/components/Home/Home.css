@@ -25,3 +25,8 @@
 .product-img img {
   max-width: 600px;
 }
+
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
