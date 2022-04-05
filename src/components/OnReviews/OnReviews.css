@@ -1,0 +1,11 @@
+.on-reviews-container {
+  background-color: lightblue;
+  text-align: center;
+  padding: 20px;
+}
+
+.on-reviews-container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
