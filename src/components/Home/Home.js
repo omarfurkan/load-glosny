@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css'
-import product from '../../images/glosny-product.jpg'
+import product from '../../images/glosny-product.jpg';
+import Reviews from '../Reviews/Reviews';
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
 
             <div className='customer-container'>
                 <h2>Customer Reviews</h2>
+                <Reviews></Reviews>
             </div>
         </di>
     );
