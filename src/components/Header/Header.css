@@ -1,15 +1,25 @@
 .header-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  justify-content: space-between;
 }
 
 nav a {
   text-decoration: none;
   color: black;
   margin-left: 20px;
+  padding-bottom: 8px;
 }
 
 nav a:hover {
   color: #db1afe;
+  border-bottom: 2px solid #db1afe;
+}
+
+.customer-container h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #db1afe;
+  font-weight: bold;
+  font-size: 42px;
 }
