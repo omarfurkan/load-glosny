@@ -17,6 +17,7 @@
   background-color: #db1afe;
   color: white;
   margin-top: 20px;
+  cursor: pointer;
 }
 .product-info button:hover {
   background-color: #bb41ff;
@@ -30,4 +31,20 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+.see-all-btn {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+.see-all-btn button {
+  border: none;
+  padding: 14px 40px;
+  background-color: #db1afe;
+  color: white;
+  cursor: pointer;
+}
+.see-all-btn button:hover {
+  background-color: #bb41ff;
 }

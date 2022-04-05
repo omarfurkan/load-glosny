@@ -5,7 +5,7 @@ import useReviews from '../../hooks/useReviews';
 import OnReviews from '../OnReviews/OnReviews';
 
 const Home = () => {
-    const [reviews, setReviews] = useReviews();
+    const [reviews] = useReviews();
     return (
         <div >
             <div className='home-container'>
@@ -30,7 +30,9 @@ const Home = () => {
                         ></OnReviews>)
                     }
                 </div>
-
+                <div className='see-all-btn'>
+                    <button>See All Reviews</button>
+                </div>
             </div>
         </div>
     );
