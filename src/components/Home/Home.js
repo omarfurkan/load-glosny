@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const [reviews] = useReviews();
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const seeAllReviews = () => {
         navigate('/reviews')
     }
