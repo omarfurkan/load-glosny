@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# Loud Glosny
+
+### Task
+
+- Headphone Review Website
+- Wrap the component with react router dom
+- Show reviews in home page and in review page
+- Also make charts in dashboard and wrote some info on blog page about context api and sementic tag.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -17,7 +24,7 @@ You may also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about [running tests](https://github.com/programming-hero-web-course-4/product-analysis-website-omarfurkan) for more information.
 
 ### `npm run build`
 
