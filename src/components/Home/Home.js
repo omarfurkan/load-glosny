@@ -3,9 +3,14 @@ import './Home.css'
 import product from '../../images/glosny-product.jpg';
 import useReviews from '../../hooks/useReviews';
 import OnReviews from '../OnReviews/OnReviews';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const [reviews] = useReviews();
+    const navigate = useNavigate()
+    const seeAllReviews = () => {
+        navigate('/reviews')
+    }
     return (
         <div >
             <div className='home-container'>
@@ -31,7 +36,7 @@ const Home = () => {
                     }
                 </div>
                 <div className='see-all-btn'>
-                    <button>See All Reviews</button>
+                    <button onClick={seeAllReviews}>See All Reviews</button>
                 </div>
             </div>
         </div>
